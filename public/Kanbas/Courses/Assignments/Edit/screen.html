@@ -1,112 +1,124 @@
-<table>
-  <tbody>
-    <tr valign="top">
-      <td>
-        <ul>
-          <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Commons</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </td>
+<html>
 
-      <td>
-        <ul>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-          <li><a href="#">Modules</a></li>
-          <li><a href="#">Piazza</a></li>
-          <li><a href="#">Zoom Meetings</a></li>
-          <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-          <li><a href="#">Quizzes</a></li>
-          <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-          <li><a href="#">People</a></li>
-          <li><a href="#">Panopto Video</a></li>
-          <li><a href="#">Discussions</a></li>
-          <li><a href="#">Announcements</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Rubrics</a></li>
-          <li><a href="#">Outcomes</a></li>
-          <li><a href="#">Collaborations</a></li>
-          <li><a href="#">Syllabus</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </td>
+<head>
+  <link rel="stylesheet" href="/Kanbas/styles.css" />
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+</head>
 
-      <td>
-        <select>
-          <option selected value="speedgrader">SpeedGrader</option>
-          <option value="option-a">Option A</option>
-          <option value="option-b">Option B</option>
-        </select>
-        <form id="edit-assignment">
-          <label for="assignment-name">
-            <h3>Assignment Name</h3>
-          </label>
-          <input id="assignment-name" value="A1 - ENV + HTML" /><br /><br />
+<body>
+  <div class="d-flex">
+    <div class="d-none d-md-block">
+      <ul class="wd-kanbas-navigation">
+        <li><a href="http://northeastern.edu"><img class="northeastern-logo"
+              src="../../../../images/northeastern.png"></a>
+        </li>
+        <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa-solid fa-user"
+              style="color: white;"></i>Account</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i><br>Dashboard</a>
+        </li>
+        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book"></i>Courses</a>
+        </li>
+        <li><a href="#"><i class="fa fa-calendar"></i><br>Calendar</a></li>
+        <li><a href="#"><i class="fa fa-inbox"></i><br>Inbox</a></li>
+        <li><a href="#"><i class="fa-regular fa-clock"></i>History</a></li>
+        <li><a href="#"><i class="fa-solid fa-display"></i>Studio</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Commons</a></li>
+        <li><a href="#"><i class="fa-regular fa-circle-question"></i><br>Help</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-md-block">
+      <ul class="wd-navigation">
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+        </li>
+        <li>
+          <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+        </li>
+        <li><a href="http://piazza.com">Piazza</a></li>
+        <li><a href="#">Zoom</a></li>
+        <li class="wd-active">
+          <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+        </li>
+        <li><a href="#">Quizzes</a></li>
+        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+        <li><a href="#">People</a></li>
+      </ul>
+    </div>
+    <div class="flex-fill">
+      <select>
+        <option selected value="speedgrader">SpeedGrader</option>
+        <option value="option-a">Option A</option>
+        <option value="option-b">Option B</option>
+      </select>
+      <form id="edit-assignment">
+        <label for="assignment-name">
+          <h3>Assignment Name</h3>
+        </label>
+        <input id="assignment-name" value="A1 - ENV + HTML" /><br /><br />
 
-          <textarea>This is the assignment descrption.</textarea><br /><br />
+        <textarea>This is the assignment descrption.</textarea><br /><br />
 
-          <label for="points">Points</label><br />
-          <input id="points" value="100" /><br /><br />
+        <label for="points">Points</label><br />
+        <input type="number" id="points" value="100" /><br /><br />
 
-          <label for="assignment-group">Assignment Group</label><br />
-          <select id="assignment-group">
-            <option selected value="assignments">ASSIGNMENTS</option>
-            <option value="quizzes">QUIZZES</option>
-            <option value="exams">EXAMS</option>
-            <option value="project">PROJECT</option>
-          </select><br /><br />
+        <label for="assignment-group">Assignment Group</label><br />
+        <select id="assignment-group">
+          <option selected value="assignments">ASSIGNMENTS</option>
+          <option value="quizzes">QUIZZES</option>
+          <option value="exams">EXAMS</option>
+          <option value="project">PROJECT</option>
+        </select><br /><br />
 
-          <label for="display-grade-as">Display Grade as</label><br />
-          <select id="display-grade-as">
-            <option selected value="percentage">Percentage</option>
-            <option value="letter-grade">Letter Grade</option>
-          </select><br /><br />
+        <label for="display-grade-as">Display Grade as</label><br />
+        <select id="display-grade-as">
+          <option selected value="percentage">Percentage</option>
+          <option value="letter-grade">Letter Grade</option>
+        </select><br /><br />
 
-          <label for="submission-type">Submission Type</label><br />
-          <select id="submission-type">
-            <option selected value="online">Online</option>
-            <option value="other">Other</option>
-          </select><br /><br />
+        <label for="submission-type">Submission Type</label><br />
+        <select id="submission-type">
+          <option selected value="online">Online</option>
+          <option value="other">Other</option>
+        </select><br /><br />
 
-          <label for="online-entry-options">Online Entry Options</label><br />
-          <input type="checkbox" value="TEXT ENTRY" name="online-entry-options" id="text-entry" />
-          <label for="text-entry">Text Entry</label><br />
+        <label for="online-entry-options">Online Entry Options</label><br />
+        <input type="checkbox" value="TEXT ENTRY" name="online-entry-options" id="text-entry" />
+        <label for="text-entry">Text Entry</label><br />
 
-          <input type="checkbox" value="WEBSITE URL" name="online-entry-options" id="website-url" />
-          <label for="website-url">Website URL</label><br />
+        <input type="checkbox" value="WEBSITE URL" name="online-entry-options" id="website-url" />
+        <label for="website-url">Website URL</label><br />
 
-          <input type="checkbox" value="MEDIA RECORDINGS" name="online-entry-options" id="media-recordings" />
-          <label for="media-recordings">Media Recordings</label><br />
+        <input type="checkbox" value="MEDIA RECORDINGS" name="online-entry-options" id="media-recordings" />
+        <label for="media-recordings">Media Recordings</label><br />
 
-          <input type="checkbox" value="STUDENT ANNOTATION" name="online-entry-options" id="student-annotation" />
-          <label for="student-annotation">Student Annotation</label><br />
+        <input type="checkbox" value="STUDENT ANNOTATION" name="online-entry-options" id="student-annotation" />
+        <label for="student-annotation">Student Annotation</label><br />
 
-          <input type="checkbox" value="FILE UPLOADS" name="online-entry-options" id="file-uploads" />
-          <label for="file-uploads">File Uploads</label><br /><br />
+        <input type="checkbox" value="FILE UPLOADS" name="online-entry-options" id="file-uploads" />
+        <label for="file-uploads">File Uploads</label><br /><br />
 
-          <label for="assign-to">Assign<br />Assign to</label><br />
-          <input id="assign-to" value="Everyone" /><br /><br />
+        <label for="assign-to">Assign<br />Assign to</label><br />
+        <input id="assign-to" value="Everyone" /><br /><br />
 
-          <label for="due">Due</label><br />
-          <input type="date" id="due" value="2024-01-22" /><br /><br />
+        <label for="due">Due</label><br />
+        <input type="date" id="due" value="2024-01-22" /><br /><br />
 
-          <label for="available-from">Available From</label><br />
-          <input type="date" id="available-from" value="2024-01-10" /><br /><br />
+        <label for="available-from">Available From</label><br />
+        <input type="date" id="available-from" value="2024-01-10" /><br /><br />
 
-          <label for="until">Until</label><br />
-          <input type="date" id="until" value="2024-01-23" /><br /><br />
+        <label for="until">Until</label><br />
+        <input type="date" id="until" value="2024-01-23" /><br /><br />
 
-          <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
-          <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>
-        </form>
-      </td>
-    </tr>
-  </tbody>
-</table>
+        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Cancel</button></a>
+        <a href="/Kanbas/Courses/Assignments/screen.html"><button type="button">Save</button></a>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

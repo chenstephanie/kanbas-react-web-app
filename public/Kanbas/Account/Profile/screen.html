@@ -1,56 +1,73 @@
-<table>
-  <tbody>
-    <tr valign="top">
-      <td>
-        <ul>
-          <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-          <li><a href="#">Calendar</a></li>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Commons</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </td>
+<html>
 
-      <td>
-        <ul>
-          <li><a href="#">Notifications</a></li>
-          <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-          <li><a href="#">Files</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">ePortfolios</a></li>
-          <li><a href="#">Shared Content</a></li>
-          <li><a href="#">The Hub</a></li>
-          <li><a href="#">Qwickly Course Tools</a></li>
-          <li><a href="#">Global Announcements</a></li>
-        </ul>
-      </td>
+<head>
+  <link rel="stylesheet" href="/Kanbas/styles.css">
+  <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+</head>
 
-      <td>
-        <p>Stephanie Chen's Profile</p>
-        <hr />
-        <table>
-          <tbody>
-            <tr valign="top">
-              <td>
-                <h1>Stephanie Chen</h1>
-                <h2>Contact</h2>
-                <p> No registered services, you can add some on the <a href="#">settings</a> page.</p>
-                <h2>Biography</h2>
-                <p>Student, Software Engineer.</p>
-                <h2>Links</h2>
-                <p><a href="https://www.linkedin.com/in/stephanie-chen-615104224/">LinkedIn</a></p>
-              </td>
-              <td>
-                <a href="/Kanbas/Account/Profile/Edit/screen.html"><button type="button">Edit Profile</button></a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<body>
+  <div class="d-flex">
+    <div class="d-none d-md-block">
+      <ul class="wd-kanbas-navigation">
+        <li><a href="http://northeastern.edu"><img class="northeastern-logo" src="../../../images/northeastern.png"></a>
+        </li>
+        <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html"><i class="fa-solid fa-user"
+              style="color: gray;"></i>Account</a>
+        </li>
+        <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-tachometer"></i><br>Dashboard</a></li>
+        <li>
+          <a href="/Kanbas/Courses/Home/screen.html"><i class="fa-solid fa-book"></i>Courses</a>
+        </li>
+        <li><a href="#"><i class="fa fa-calendar"></i><br>Calendar</a></li>
+        <li><a href="#"><i class="fa fa-inbox"></i><br>Inbox</a></li>
+        <li><a href="#"><i class="fa-regular fa-clock"></i>History</a></li>
+        <li><a href="#"><i class="fa-solid fa-display"></i>Studio</a></li>
+        <li><a href="#"><i class="fa-solid fa-circle-arrow-right"></i>Commons</a></li>
+        <li><a href="#"><i class="fa-regular fa-circle-question"></i><br>Help</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-md-block">
+      <ul>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">ePortfolios</a></li>
+        <li><a href="#">Shared Content</a></li>
+        <li><a href="#">The Hub</a></li>
+        <li><a href="#">Qwickly Course Tools</a></li>
+        <li><a href="#">Global Announcements</a></li>
+      </ul>
+    </div>
+    <div class="flex-fill">
+      <p>Stephanie Chen's Profile</p>
+      <hr />
+      <table>
+        <tbody>
+          <tr valign="top">
+            <td>
+              <h1>Stephanie Chen</h1>
+              <h2>Contact</h2>
+              <p> No registered services, you can add some on the <a href="#">settings</a> page.</p>
+              <h2>Biography</h2>
+              <p>Student, Software Engineer.</p>
+              <h2>Links</h2>
+              <p><a href="https://www.linkedin.com/in/stephanie-chen-615104224/">LinkedIn</a></p>
+            </td>
+            <td>
+              <a href="/Kanbas/Account/Profile/Edit/screen.html"><button type="button">Edit Profile</button></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+
+</html>
