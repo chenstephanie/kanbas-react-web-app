@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "RS101",
+    "name": "Rocket Propulsion",
+    "number": "RS4550",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "rocket-propulsion.png"
+  },
+  {
+    "_id": "RS102",
+    "name": "Aerodynamics",
+    "number": "RS4560",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "aerodynamics.png"
+  },
+  {
+    "_id": "RS103",
+    "name": "Spacecraft Design",
+    "number": "RS4570",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "spaceship-design.png"
+  },
+  {
+    "_id": "RS104",
+    "name": "Guitar",
+    "number": "MUSC1134",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "guitar.jpg"
+  },
+  {
+    "_id": "RS105",
+    "name": "Swim Gym",
+    "number": "PHYS1100",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "swimming.jpg"
+  },
+  {
+    "_id": "RS106",
+    "name": "Painting Basics",
+    "number": "ARTF2340",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "painting.jpg"
+  },
+  {
+    "_id": "RS107",
+    "name": "Discrete Structures",
+    "number": "CS1800",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15",
+    "image": "discrete.jpg"
+  }
+]
